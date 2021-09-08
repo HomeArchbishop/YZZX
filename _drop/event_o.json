@@ -1,0 +1,50 @@
+[
+    {
+        "id": 60327,
+        "event": "自清园不长草了，学校准备生草",
+        "postEvent": "",
+        "effect:CHR": "",
+        "effect:ACH": "",
+        "effect:STR": "",
+        "effect:EMQ": "",
+        "effect:SPR": "",
+        "effect:MRK": "",
+        "NoRandom": "",
+        "include": "",
+        "exclude": "EVT?[60327]",
+        "branch1": "",
+        "branch2": ""
+    },
+    {
+        "id": 60328,
+        "event": "学校互换了男女宿舍的楼，但是你走错了，然后你发现大家都走错了",
+        "postEvent": "",
+        "effect:CHR": "",
+        "effect:ACH": "",
+        "effect:STR": "",
+        "effect:EMQ": "",
+        "effect:SPR": "",
+        "effect:MRK": "",
+        "NoRandom": "",
+        "include": "EVT?[10001]",
+        "exclude": "EVT?[60328]",
+        "branch1": "",
+        "branch2": ""
+    },
+    {
+        "id": 60329,
+        "event": "学校在自清园放置了一辆航母，旨在增幅学生的国防意识",
+        "postEvent": "",
+        "effect:CHR": "",
+        "effect:ACH": 2,
+        "effect:STR": "",
+        "effect:EMQ": "",
+        "effect:SPR": "",
+        "effect:MRK": "",
+        "NoRandom": "",
+        "include": "",
+        "exclude": "EVT?[60329]",
+        "branch1": "",
+        "branch2": ""
+    }
+]
