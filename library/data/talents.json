@@ -22,7 +22,7 @@
         ]
     },
     "1004": {
-        "name": "卷王之王",
+        "name": "卷帘大将",
         "id": 1004,
         "description": "就是很会卷",
         "effect": {
@@ -215,7 +215,10 @@
         "name": "你配吗",
         "id": 1026,
         "description": "你不会谈恋爱",
-        "grade": 0
+        "grade": 0,
+        "exclusive": [
+            1030
+        ]
     },
     "1027": {
         "name": "跑操之神",
@@ -236,7 +239,7 @@
         "grade": 0
     },
     "1029": {
-        "name": "\b徐弋明",
+        "name": "徐弋明",
         "id": 1029,
         "description": "分手buff",
         "grade": 0
@@ -249,7 +252,10 @@
             "CHR": 5,
             "EMQ": 5
         },
-        "grade": 0
+        "grade": 0,
+        "exclusive": [
+            1026
+        ]
     },
     "1031": {
         "name": "天生残疾",
@@ -369,6 +375,23 @@
         "name": "留叶伟",
         "id": 1043,
         "description": "你不晓得",
+        "grade": 0
+    },
+    "1044": {
+        "name": "漫社成员",
+        "id": 1044,
+        "description": "你是漫社的人",
+        "grade": 0
+    },
+    "1055": {
+        "name": "弟弟の私货",
+        "id": 1055,
+        "description": "颜值+10，体质-２，成绩+5，恋爱概率增加",
+        "effect": {
+            "CHR": 10,
+            "ACH": 5,
+            "STR": -2
+        },
         "grade": 0
     }
 }

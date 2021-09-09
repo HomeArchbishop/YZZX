@@ -179,4 +179,8 @@
     <script src="static/js/life.js?s=<?php echo time() ?>"></script>
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> master
