@@ -1,0 +1,345 @@
+/*
+ * @Author: 拆家大主教 
+ * @Date: 2021-09-05 17:12:35 
+ * @Last Modified by: 拆家大主教
+ * @Last Modified time: 2021-09-08 17:01:31
+ */
+
+/** 总体布局 **/
+html {
+    --color-dark: #222325;
+    --color-white: white;
+    --color-gold: gold;
+    --color-dark-shadow: #676666;
+    --color-white-shadow: #888;
+    --color-item-bg: #fff;
+    --color-small-item-bg: rgb(255, 255, 255);
+    --color-item-cover: #fff;
+    --color-body-bg: #F0FFF0;
+    --color-alert-bg: #FFC0CB;
+    --color-selected: #AFEEEE;
+    --color-card-1: #E6E6FA;
+    --color-card-2: #FFFFE0;
+    --color-card-3: #FFF0F5;
+}
+
+body {
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.wrap {
+    background-color: var(--color-body-bg);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.card {
+    background-color: transparent;
+    height: fit-content;
+}
+h3,
+h1 {
+    color: var(--color-dark);
+    text-shadow: var(--color-dark-shadow) 1px 1px 2px;
+    letter-spacing: 1px;
+    margin: 0;
+    font-weight: 400;
+}
+h4,
+h2 {
+    margin-bottom: 0;
+    font-size: 1.1em;
+    text-shadow: var(--color-white-shadow) 1px 1px 2px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--color-white);
+}
+.bg1 { background-color:  var(--color-card-1); }
+.bg2 { background-color:  var(--color-card-2); }
+.bg3 { background-color:  var(--color-card-3); }
+
+/** 开始页面主体 **/
+#start_card {
+    opacity: 0;
+}
+
+.start_item_card:hover {
+    box-shadow: 0 0 15px var(--color-dark-shadow) inset;
+}
+
+.start_item_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    flex-wrap: wrap;
+    border: var(--color-dark) solid 2px
+}
+
+.start_item_card .cover {
+    background-color: var(--color-item-cover);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    transition: top .2s;
+}
+
+/** 天赋界面 **/
+.talent_item_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow-y: scroll;
+    width: 100%;
+    height: 300px;
+    border: var(--color-dark) solid 2px;
+}
+
+.talent_item_card .talent_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    margin-top: 3px;
+    width: 100%;
+    font-size: 20px;
+    border: var(--color-dark) solid 1px;
+    background-color: var(--color-small-item-bg);
+    cursor: pointer;
+}
+
+.talent_item_card .talent_item:hover {
+    border: var(--color-dark) solid 3px;
+}
+
+.talent_item_card .draw_ten_btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.talent_item_confirm_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+    height: 70px;
+    border: var(--color-dark) solid 2px;
+    cursor: pointer;
+}
+
+/** choice **/
+.choice_item_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+    overflow-y: scroll;
+    width: 100%;
+    height: 300px;
+    border: var(--color-dark) solid 2px
+}
+
+.choice_item_card div {
+    height: 30px;
+    color: var(--color-dark);
+    letter-spacing: 1px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.choice_item_card div .reduce_icon,
+.choice_item_card div .plus_icon {
+    min-height: 20px;
+    min-width: 20px;
+    max-height: 20px;
+    max-width: 20px;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: -5px;
+    border-radius: 50%;
+    border: var(--color-dark) solid 1px;
+    font-size: 10px;
+    color: var(--color-dark);
+    cursor: pointer;
+}
+
+.choice_item_card .random_btn {
+    border: var(--color-dark) solid 2px;
+    height: 40px;
+    width: 70px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.choice_item_card .alert_error {
+    border: var(--color-dark) solid 2px;
+    background-color: var(--color-alert-bg);
+    width: 100%;
+    margin-top: -35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.choice_item_confirm_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--color-dark) solid 2px;
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+    height: 70px;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+/** event 页面 **/
+.event_item_card {
+    border: var(--color-dark) solid 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 450px;
+    cursor: pointer;
+}
+
+.event_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+    font-size: 20px;
+    background-color: var(--color-small-item-bg);
+    margin: 3px;
+}
+
+.event_item * {
+    min-width: 5em;
+}
+
+.event_item_confirm_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--color-dark) solid 2px;
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+    height: 70px;
+    cursor: pointer;
+}
+
+/** summary 页面 **/
+.summary_item_card {
+    border: var(--color-dark) solid 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 400px;
+    cursor: pointer;
+}
+
+.summary_item {
+    border: var(--color-dark) solid 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+    font-size: 20px;
+    margin: 3px;
+    padding: 5px 8px;
+}
+
+.summary_item_confirm_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--color-dark) solid 2px;
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+    height: 70px;
+    cursor: pointer;
+}
+
+/** lg **/
+@media (min-width:1101px) {
+    .card {
+        width: 840px;
+    }
+    .start_item_card {
+        height: 200px;
+    }
+}
+/** md **/
+@media (min-width:651px) and (max-width:1100px) {
+    .card {
+        width: 630px;
+    }
+    .start_item_card {
+        height: 200px;
+    }
+}
+/** sm **/
+@media (max-width:650px) {
+    .card {
+        width: 420px;
+    }
+    .start_item_card {
+        height: 200px;
+    }
+}
+/** xs **/
+@media (max-width:450px) {
+    .card {
+        width: 320px;
+    }
+    .start_item_card {
+        height: 150px;
+    }
+}
