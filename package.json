@@ -1,0 +1,11 @@
+{
+  "name": "yzzx",
+  "author": "拆家大主教",
+  "repository": {
+    "url": "https://github.com/HomeArchbishop/YZZX"
+  },
+  "homepage": "https://yzzx.buuug.top",
+  "scripts": {
+    "build": " "
+  }
+}
